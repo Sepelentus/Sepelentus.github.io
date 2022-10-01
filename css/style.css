@@ -1,0 +1,390 @@
+body{
+    font-family: 'Inter Tight', sans-serif;
+}
+* {box-sizing:border-box}
+header{
+  max-height: 70vh;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 65vw;
+  padding-left: 50px;
+  padding-top: 50px;
+  position:absolute;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  padding-top: 50px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 3s;
+}
+
+@keyframes fade {
+  from {opacity: .7}
+  to {opacity: 1}
+}
+
+.texto{
+  min-width: 70vw;
+  padding-top: 50px;
+}
+
+.parallax {
+  /* The image used */
+  background-image: url("../img/Metaphorical\ music.jpg");
+
+  /* Set a specific height */
+  min-height: 100vh; 
+}
+
+.parallax2{
+  /* The image used */
+  background-image: url("../img/Modal\ Soul.jpg");
+
+  /* Set a specific height */
+  min-height: 100vh; 
+}
+
+.parallax3{
+  /* The image used */
+  background-image: url("../img/Spiritual\ State.jpg");
+
+  /* Set a specific height */
+  min-height: 100vh; 
+}
+
+.parallax4{
+  /* The image used */
+  background-image: url("../img/luvsicpt6.jpg");
+
+  /* Set a specific height */
+  min-height: 100vh; 
+}
+
+.parallax, .parallax2, .parallax3, .parallax4{
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.textoAlbum{
+  text-align: center;
+  background-color: #f2f2f2;
+  padding: 40px 70px;
+  text-align: justify;
+  font-size: 24px;
+}
+
+.textoAlbum2{
+  
+  text-align: center;
+  background-color:rgb(202, 72, 50);
+  padding: 40px 70px;
+  text-align: justify;
+  font-size: 24px;
+  color: white;
+}
+
+.textoAlbum3{
+  
+  text-align: center;
+  background-color:rgb(227, 38, 103);
+  padding: 40px 70px;
+  text-align: justify;
+  font-size: 24px;
+  color: rgb(0, 0, 0);
+}
+
+a:link{
+  color: rgb(63, 163, 63);
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: pink;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+#card1, #card2, #card3{
+  height: 40vh;
+  margin-bottom: 20px;
+  font-size: 13px;
+}
+
+/* Menus para la biografia*/
+/* Style the tab */
+.tab {
+  float: left;
+  border: 1px solid #ccc;
+  background-color: #e8feff;
+  width: 27vw;
+  height: 300px;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  display: block;
+  background-color: inherit;
+  color: black;
+  padding: 16px 12px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  float: left;
+  padding: 0px 12px;
+  border: 1px solid #ccc;
+  background-color:floralwhite;
+  width: 73vw;
+  border-left: none;
+  height: 300px;
+  overflow: scroll;
+}
+
+/*Efecto al bajar en la tab de influencia*/
+#test p, img {
+  margin-top: 25px;
+  font-size: 21px;
+  text-align: center;
+
+  -webkit-animation: fadein 4s; /* Safari, Chrome and Opera > 12.1 */
+     -moz-animation: fadein 4s; /* Firefox < 16 */
+      -ms-animation: fadein 4s; /* Internet Explorer */
+       -o-animation: fadein 4s; /* Opera < 12.1 */
+          animation: fadein 4s;
+}
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+.fondobase{
+  background-color: lightslategray;
+}
+
+.introduccion{
+  display: block;
+  background-color: darkslategray;
+  color: white;
+  width: 40vw;
+  height: 40vh;
+  padding: 20px;
+  margin-top: 75px;
+  margin-bottom: 30px;
+}
+
+/*  Codigo para barra de progreso */
+
+/* Style the header: fixed position (always stay at the top) */
+.header {
+  margin-top: 5.9vh;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  background-color: #f1f1f1;
+}
+
+/* The progress container (grey background) */
+.progress-container {
+  width: 90vw;
+  height: 7px;
+  background: #ccc;
+}
+
+/* The progress bar (scroll indicator) */
+.progress-bar {
+  height: 8px;
+  background: #04AA6D;
+  width: 0%;
+}
+
+.textoInfluencia{
+  display:block;
+  text-decoration: solid;
+  width: 30vw;
+}
+
+.textoInfluenciaFinal{
+  display: block;
+  text-decoration: solid;
+  width: 50vw;
+}
+
+.RiBimg{
+  background-image:url(../img/Field\ of\ swords\ by\ the\ true\ mask.jpg);
+  height: 75px;
+  width: 50vw;
+  margin-bottom: 50px;
+  color: rgb(194, 128, 4);
+  font-weight: 250;
+  font-size: larger;
+}
+.hero-image{
+    /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/samuraichamploo\ opening1.png");
+}
+.hero-image2{
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/Field\ of\ swords\ by\ the\ true\ mask.jpg");
+}
+.hero-image3{
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/samuraichamploo\ opening2.png");
+}
+
+/* The hero image */
+.hero-image, .hero-image2, .hero-image3{
+
+  /* Set a specific height */
+  height: 100vh;
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* Place text in the middle of the image */
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.creditos{
+  display: block;
+  background-color: darkslategray;
+  color: white;
+  width: 40vw;
+  height: 40vh;
+  padding: 20px;
+  margin-top: 75px;
+  margin-bottom: 30px;
+}

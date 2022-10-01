@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@200&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Nujabes Fan Page</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand sticky-top" style="background-color: rgb(241, 169, 59);">
+        <div class="container-fluid">
+    
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto ">
+              <li class="nav-item">
+                <a class="nav-link text-black me-2" href="index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link me-2 text-black" href="Albumes.html">Albumes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link me-2 text-black" href="Biografia.html">Biografia</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link me-2 text-bg-dark" href="Influencia.html">Influencias</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div class="creditosFondo">
+        <div class="tab">
+            <button class="tablinks" onclick="openPart(event, 'Informacion')">Informacion</button>
+            <button class="tablinks" onclick="openPart(event, 'Imagenes')">Imagenes</button>
+            <button class="tablinks" onclick="openPart(event, 'Programacion')">Programacion</button>
+          </div>
+          
+          <div id="Informacion" class="tabcontent" style="display:none;">
+            <h3>Informacion para todo:</h3>
+            <a href="https://www.youtube.com/watch?v=wEo9mGWk6RA"> Genius recopilacion historia Nujabes</a>
+            <br>
+            <a href="https://www.youtube.com/watch?v=UWXr6AXtiRw"> Como Nujabes influencio el Lo-Fi / Historia de Nujabes</a>
+            <br>
+            <a href="https://es.wikipedia.org/wiki/Nujabes"> Wikipedia de Nujabes</a>
+            <br>
+            <a href="https://es.wikipedia.org/wiki/Spiritual_State"> Informacion sobre el album Spiritual State</a>
+            <br>
+            <a href="https://www.reddit.com/r/Nujabes/comments/xoat3z/who_holds_the_copyright_to_nujabes_s_music/"> Informacion breve sobre Hydeout Productions</a>
+            <br>
+            <a href="#"> Conocimiento propio de previas investigaciones </a>
+          </div>
+          
+          <div id="Imagenes" class="tabcontent" style="display:none;">
+            <h3>Imagenes usadas:</h3>
+            <a href="https://pbs.twimg.com/media/DniE4RvU8AEOEHM.jpg:large"> Album Metaphorical Music</a>
+            <br>
+            <a href="https://soundcloud.com/alteredcrates/sets/mf-doom-nujabes-metaphorical-villainy"> MFDOOM x Nujabes Art</a>
+            <br>
+            <a href="https://www.reddit.com/r/Nujabes/comments/12hkjz/nujabes_typography_project_i_did_for_a_class/"> Arte de Tipografia Nujabes</a>
+            <br>
+            <a href="https://www.deviantart.com/thetruemask/art/Samurai-Champloo-Wallpaper-Field-of-swords-778713535"> Fondo de Samurai Champloo</a>
+            <br>
+            <a href="https://www.reddit.com/r/Nujabes/comments/22btqc/quick_little_wallpaper_i_made_enjoy/"> Wallpaper de Nujabes</a>
+            <br>
+            <a href="https://express.adobe.com/es-ES/tools/remove-background"> Poner transparencia en fondo</a>
+          </div>
+          
+          <div id="Programacion" class="tabcontent" style="display:none;">
+            <h3>Links utilizados:</h3>
+            <a href="https://www.w3schools.com/howto/default.asp"> Muchisimo w3schools</a>
+            <br>
+            <a href="https://getbootstrap.com/docs/5.2/getting-started/introduction/"> Bootstrap </a>
+            <br>
+            <a href="https://stackoverflow.com/questions/11679567/using-css-for-a-fade-in-effect-on-page-load"> Hacer efecto de que aparezca el contenido</a>
+            <br>
+            <a href="https://www.toptal.com/designers/htmlarrows/arrows/"> Como hacer flechas en HTML</a>
+            <br>
+            <a href="https://github.com/pgaticac/EIN082B"> El repositorio de la profe</a>
+            <br>
+            <a href="https://alvarotrigo.com/blog/css-animations-scroll/"> Parte del codigo utilizado para los scrolls</a>
+          </div>
+      </div>
+
+      <script>
+      function openPart(evt, partName) {
+        // Declare all variables
+        var i, tabcontent, tablinks;
+      
+        // Get all elements with class="tabcontent" and hide them
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+      
+        // Get all elements with class="tablinks" and remove the class "active"
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+      
+        // Show the current tab, and add an "active" class to the link that opened the tab
+        document.getElementById(partName).style.display = "block";
+        evt.currentTarget.className += " active";
+      }
+      </script>
+</body>
